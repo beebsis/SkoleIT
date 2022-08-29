@@ -13,7 +13,7 @@ namespace SkoleIT.Models
 
         public async static Task AddFlyoutMenusDetails()
         {
-            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
+            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl(); 
 
             var studentDashboardInfo = AppShell.Current.Items.Where(f => f.Route == nameof(StudentDashboardPage)).FirstOrDefault();
             if (studentDashboardInfo != null) AppShell.Current.Items.Remove(studentDashboardInfo);

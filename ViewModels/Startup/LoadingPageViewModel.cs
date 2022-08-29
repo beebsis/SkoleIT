@@ -15,7 +15,7 @@ namespace SkoleIT.ViewModels.Startup
     {
         public LoadingPageViewModel()
         {
-            CheckUserLoginDetails();
+            CheckUserLoginDetails(); 
         }
         private async void CheckUserLoginDetails()
         {

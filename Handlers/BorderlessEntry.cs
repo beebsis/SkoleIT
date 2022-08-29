@@ -8,5 +8,6 @@ namespace SkoleIT.Handlers
 {
     public class BorderlessEntry : Entry
     {
+         
     }
 }

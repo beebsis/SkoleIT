@@ -8,5 +8,5 @@ public partial class LoadingPage : ContentPage
 	{
 		InitializeComponent();
 		this.BindingContext = viewModel;
-	}
+	} 
 }

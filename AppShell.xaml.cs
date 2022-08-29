@@ -11,6 +11,6 @@ public partial class AppShell : Shell
         InitializeComponent();
         this.BindingContext = new AppShellViewModel();
 
-       
+         
     }
 }

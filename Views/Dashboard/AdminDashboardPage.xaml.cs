@@ -4,6 +4,6 @@ public partial class AdminDashboardPage : ContentPage
 {
 	public AdminDashboardPage()
 	{
-		InitializeComponent();
+		InitializeComponent(); 
 	}
 }

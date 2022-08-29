@@ -11,7 +11,7 @@ namespace SkoleIT.ViewModels.Dashboard
     {
         public DashboardPageViewModel()
         {
-            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
+            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl(); 
         }
     }
 }

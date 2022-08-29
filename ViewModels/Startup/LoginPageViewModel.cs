@@ -20,7 +20,7 @@ namespace SkoleIT.ViewModels.Startup
     public partial class LoginPageViewModel : BaseViewModel
     {
         [ObservableProperty]
-        private string _email;
+        private string _email; 
 
         [ObservableProperty]
         private string _password;

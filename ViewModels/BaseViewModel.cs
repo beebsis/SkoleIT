@@ -14,7 +14,7 @@ namespace SkoleIT.ViewModels
     {
         [ObservableProperty]
         private bool _isBusy;
-
+ 
         [ObservableProperty]
         private string _title;
     }
