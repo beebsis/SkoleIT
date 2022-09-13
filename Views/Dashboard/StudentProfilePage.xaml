@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SkoleIT.Views.Dashboard.StudentProfilePage"
+             Title="StudentProfilePage"
+             BackgroundColor="#dedede">
+    <StackLayout>
+        <ContentView>
+            <StackLayout>
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="50"
+                    IsClippedToBounds="True">
+                    <Image Source="case_sde_logo.svg" HeightRequest="150" WidthRequest="150" />
+                </Frame>
+                <Label Text="Alexander W.P"/>
+                <Label Text="Syddansk Erhvervskole"/>
+            </StackLayout>
+        </ContentView>
+        <ContentView>
+            <StackLayout>
+                <Frame BorderColor="Gray">
+                    <Label Text="UNI-LOGIN"/>
+                </Frame>
+                <Frame>
+                    <Label Text="NAME:"/>
+                </Frame>
+                <Frame>
+                    <Label Text="INSTITUTION:"/>
+                </Frame>
+                <Frame>
+                    <Label Text="Birthdate:"/>
+                </Frame>
+            </StackLayout>
+        </ContentView>
+        <ContentView>
+            <StackLayout>
+                <Image Source="case_sde_logo.svg" HeightRequest="150" WidthRequest="150" />
+                <Label Text="Validated by"/>
+                <Label Text="Syddansk Erhvervskole"/>
+                <Label Text="01/01/2017"/>
+                <Button Text="CHECK"/>
+            </StackLayout>
+        </ContentView>
+            
+    </StackLayout>
+</ContentPage>

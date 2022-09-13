@@ -2,8 +2,92 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SkoleIT.Views.Dashboard.StudentDashboardPage"
-             Title="StudentDashboardPage">
-    <StackLayout Padding="10">
-        <Label FontSize="18" Text="Welcome to Student Dashboard Page" />
+             Title="StudentDashboardPage"
+             BackgroundColor="White">
+    <StackLayout>
+        <ContentView>
+            <StackLayout Margin="0,20,0,30" HorizontalOptions="Center">
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="100"
+                    IsClippedToBounds="True">
+                    <Image Source="case_sde_logo.svg" HeightRequest="118" WidthRequest="118" />
+                </Frame>
+                <Label Text="Alexander W.P" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="Syddansk Erhvervskole" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ContentView>
+        <ContentView Padding="20,0,0,20">
+            <StackLayout HorizontalOptions="Center">
+                <ContentView Padding="10,0,0,0">
+                    <Label Text="UNI-LOGIN" TextColor="#A8A8A8"/>
+                </ContentView>
+                <ContentView>
+                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                            <Frame BorderColor="White" HeightRequest="32">
+                                <Label Text="Alex5562" HeightRequest="21" TextColor="#A8A8A8" FontSize="15"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </ContentView>
+            </StackLayout>
+        </ContentView>
+        <ContentView Padding="20,0,0,20">
+            <StackLayout HorizontalOptions="Center">
+                <ContentView Padding="10,0,0,0">
+                    <Label Text="NAME:" TextColor="#A8A8A8"/>
+                </ContentView>
+                <ContentView>
+                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                            <Frame BorderColor="White" HeightRequest="32">
+                                <Label Text="Alex5562" HeightRequest="21" TextColor="#A8A8A8" FontSize="15"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </ContentView>
+            </StackLayout>
+        </ContentView>
+        <ContentView Padding="20,0,0,20">
+            <StackLayout HorizontalOptions="Center">
+                <ContentView Padding="10,0,0,0">
+                    <Label Text="INSTITUTION:" TextColor="#A8A8A8"/>
+                </ContentView>
+                <ContentView>
+                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                            <Frame BorderColor="White" HeightRequest="32">
+                                <Label Text="Syddansk Erhvervskole" HeightRequest="21" TextColor="#A8A8A8" FontSize="15"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </ContentView>
+            </StackLayout>
+        </ContentView>
+        <ContentView Padding="20,0,0,20">
+            <StackLayout HorizontalOptions="Center">
+                <ContentView Padding="10,0,0,0">
+                    <Label Text="BRITHDATE:" TextColor="#A8A8A8"/>
+                </ContentView>
+                <ContentView>
+                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                            <Frame BorderColor="White" HeightRequest="32">
+                                <Label Text="20/05/1999" HeightRequest="21" TextColor="#A8A8A8" FontSize="15"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </ContentView>
+            </StackLayout>
+        </ContentView>
+        <ContentView>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="2">
+                <Label Text="Validated by" HorizontalOptions="Center" Padding="2"/>
+                <Label Text="Syddansk Erhvervskole" HorizontalOptions="Center" Padding="2"/>
+                <Label Text="01/01/2017" HorizontalOptions="Center" Padding="2,0,0,20"/>
+                <Button Text="CHECK" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" Padding="50,10" BackgroundColor="#00788A"/>
+            </StackLayout>
+        </ContentView>
     </StackLayout>
 </ContentPage>

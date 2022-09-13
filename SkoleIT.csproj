@@ -66,4 +66,16 @@
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Views\Dashboard\StudentProfilePage.xaml.cs">
+	    <DependentUpon>StudentProfilePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Dashboard\StudentProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
