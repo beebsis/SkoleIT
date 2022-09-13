@@ -4,7 +4,8 @@
              x:Class="SkoleIT.Views.Startup.LoginPage"
              Shell.NavBarIsVisible="False"
              xmlns:handlers="clr-namespace:SkoleIT.Handlers"
-             Title="LoginPage">
+             Title="LoginPage"
+             BackgroundColor="#dedede">
     <VerticalStackLayout 
             Spacing="25" 
             Padding="30,0" 
@@ -13,18 +14,18 @@
         <Image Source="case_sde_logo.svg" HeightRequest="150" WidthRequest="150" />
 
         <VerticalStackLayout Spacing="5">
-            <Label Text="Syddansk Erhvervskole" FontSize="28" TextColor="Gray" HorizontalTextAlignment="Center" />
-            <Label Text="User Login" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
+            <Label Text="Syddansk Erhvervskole" FontSize="28" TextColor="Black" HorizontalTextAlignment="Center" />
+            <Label Text="User Login" FontSize="18" TextColor="Black" HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
 
         <ContentView>
             <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center">
-                <VerticalStackLayout BackgroundColor="White" Padding="10,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center">
+                <VerticalStackLayout BackgroundColor="#dedede" Padding="10,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center">
                     <handlers:BorderlessEntry
                         Text="{Binding Email}"
                         Margin="20,0,0,0"
                         VerticalOptions="Center"
-                        Placeholder="User Name"
+                        Placeholder="Username"
                         Keyboard="Email"
                     />
                 </VerticalStackLayout>
@@ -33,7 +34,7 @@
 
         <ContentView>
             <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center">
-                <VerticalStackLayout BackgroundColor="White" Padding="10,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center">
+                <VerticalStackLayout BackgroundColor="#dedede" Padding="10,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center">
                     <handlers:BorderlessEntry
                         Text="{Binding Password}"
                         Margin="20,0,0,0"

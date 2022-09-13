@@ -1,8 +1,8 @@
-namespace SkoleIT.Views.StudentProfile;
+namespace SkoleIT.Views.StudentProfilePage;
 
-public partial class StudentProfile : ContentPage
+public partial class StudentProfilePage : ContentPage
 {
-    public StudentProfile()
+    public StudentProfilePage()
     {
         InitializeComponent();
     }

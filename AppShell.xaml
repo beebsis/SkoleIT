@@ -4,21 +4,24 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:SkoleIT"
-    xmlns:dashboardPages="clr-namespace:SkoleIT.Views.Dashboard"
     xmlns:models="clr-namespace:SkoleIT.Models"
     Shell.TabBarIsVisible="False"
+    xmlns:dashboardPages="clr-namespace:SkoleIT.Views.Dashboard"
     xmlns:startupPages="clr-namespace:SkoleIT.Views.Startup">
 
-   
-    <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
-        ContentTemplate="{DataTemplate startupPages:LoadingPage}" Route="LoadingPage" />
+    <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate startupPages:LoadingPage}"
+        Route="LoadingPage" />
 
     <ShellContent
-        Title="Login Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
         ContentTemplate="{DataTemplate startupPages:LoginPage}"
-        Route="LoginPage" />
-    
-    
+        Route="LoginPage"
+        Title="Login Page" />
+
     <Shell.FlyoutFooter>
         <StackLayout Padding="20">
             <Button Text="Sign Out" Command="{Binding SignOutCommand}" />

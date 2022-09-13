@@ -1,5 +1,6 @@
 ﻿using SkoleIT.Controls;
 using SkoleIT.Views.Dashboard;
+using SkoleIT.Views.StudentProfilePage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,9 +44,68 @@ namespace SkoleIT.Models
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
-                                    Title = "Student Profile",
-                                    ContentTemplate = new DataTemplate(typeof(StudentDashboardPage)),
+                                    Title = "Student Card"
                                 },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Student Profile",
+                                    ContentTemplate = new DataTemplate(typeof(Views.Dashboard.StudentProfilePage)),
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Grades",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Messages",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Schedule",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Student Your Class",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Cafeteria",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Teachers",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Maps",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "Printers",
+
+                                },
+                                new ShellContent
+                                {
+                                    Icon = Icons.AboutUs,
+                                    Title = "File Archive",
+
+                                }
                             }
                 };
                 if (!AppShell.Current.Items.Contains(flyoutItem))
