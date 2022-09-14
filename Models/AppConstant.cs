@@ -1,11 +1,11 @@
 ﻿using SkoleIT.Controls;
 using SkoleIT.Views.Dashboard;
-using SkoleIT.Views.StudentProfilePage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentProfilePage = SkoleIT.Views.Dashboard.StudentProfilePage;
 
 namespace SkoleIT.Models
 {
@@ -38,72 +38,71 @@ namespace SkoleIT.Models
                                 new ShellContent
                                 {
                                     Icon = Icons.Dashboard,
-                                    Title = "Student Dashboard",
+                                    Title = "Student Card",
                                     ContentTemplate = new DataTemplate(typeof(StudentDashboardPage)),
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
-                                    Title = "Student Card"
-                                },
-                                new ShellContent
-                                {
-                                    Icon = Icons.AboutUs,
                                     Title = "Student Profile",
-                                    ContentTemplate = new DataTemplate(typeof(Views.Dashboard.StudentProfilePage)),
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Grades",
-
+                                    Route="StudentGrades",
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Messages",
-
+                                    Route="Messages",
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Schedule",
+                                    Route = "Schedule",
 
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
-                                    Title = "Student Your Class",
+                                    Title = "Your Class",
+                                    Route = "Your Class",
 
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Cafeteria",
-
+                                    Route = "Cafeteria"
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Teachers",
-
+                                    Route = "Teachers",
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Maps",
+                                    Route = "Maps",
 
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "Printers",
+                                    Route = "Printers",
 
                                 },
                                 new ShellContent
                                 {
                                     Icon = Icons.AboutUs,
                                     Title = "File Archive",
+                                    Route = "FileArchive",
 
                                 }
                             }

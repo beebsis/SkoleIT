@@ -38,9 +38,11 @@ namespace SkoleIT.ViewModels.Startup
         {
             if (!string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password))
             {
-                var userDetails = new UserBasicInfo();
-                userDetails.Email = Email;
-                userDetails.FullName = "Test User Name";
+                var userDetails = new UserBasicInfo
+                {
+                    Email = Email,
+                    FullName = "Test User Name"
+                };
 
                 // Student Role, Teacher Role, Admin Role,
                 if (Email.ToLower().Contains("student"))
