@@ -1,8 +1,8 @@
 ﻿namespace SkoleIT.Views.Dashboard
 {
-    public partial class StudentProfilePage : ContentPage
+    public partial class StudentGradesPage : ContentPage
     {
-        public StudentProfilePage()
+        public StudentGradesPage()
         {
             InitializeComponent();
         }
