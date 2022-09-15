@@ -10,7 +10,7 @@ namespace SkoleIT.Models
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
-        public string studentIamge { get; set; }
+        public string studentImage { get; set; }
         public string userName { get; set; }
         public string birthDate { get; set; }
         public string school { get; set; }
