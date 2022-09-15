@@ -13,8 +13,8 @@
                     IsClippedToBounds="True">
                     <Image Source="case_sde_logo.svg" HeightRequest="118" WidthRequest="118"/>
                 </Frame>
-                <Label Text="Alexander W.P" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
-                <Label Text="Syddansk Erhvervskole" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="{Binding FullName}" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="{Binding School}" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
             </StackLayout>
         </ContentView>
         <ContentView Padding="0,0,0,20">
@@ -26,7 +26,7 @@
                     <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
                         <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
                             <Frame BorderColor="White" HeightRequest="32">
-                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                <Label Text="{Binding Username}" HeightRequest="21" TextColor="#535353" FontSize="15"/>
                             </Frame>
                         </VerticalStackLayout>
                     </ContentView>
@@ -42,7 +42,7 @@
                     <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
                         <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
                             <Frame BorderColor="White" HeightRequest="32">
-                                <Label Text="Alexander" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                <Label Text="{Binding FullName}"  HeightRequest="21" TextColor="#535353" FontSize="15"/>
                             </Frame>
                         </VerticalStackLayout>
                     </ContentView>
@@ -58,7 +58,7 @@
                     <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
                         <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
                             <Frame BorderColor="White" HeightRequest="32">
-                                <Label Text="Syddansk Erhvervskole" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                <Label Text="{Binding School}" HeightRequest="21" TextColor="#535353" FontSize="15"/>
                             </Frame>
                         </VerticalStackLayout>
                     </ContentView>
@@ -74,7 +74,7 @@
                     <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
                         <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
                             <Frame BorderColor="White" HeightRequest="32">
-                                <Label Text="20/05/1999" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                <Label Text="{Binding BirthDate}" HeightRequest="21" TextColor="#535353" FontSize="15"/>
                             </Frame>
                         </VerticalStackLayout>
                     </ContentView>
@@ -84,8 +84,8 @@
         <ContentView>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="2">
                 <Label Text="Validated by" HorizontalOptions="Center" Padding="2"/>
-                <Label Text="Syddansk Erhvervskole" HorizontalOptions="Center" Padding="2"/>
-                <Label Text="01/01/2017" HorizontalOptions="Center" Padding="2,0,0,20"/>
+                <Label Text="{Binding SChool}" HorizontalOptions="Center" Padding="2"/>
+                <Label Text="--/--/--" HorizontalOptions="Center" Padding="2,0,0,20"/>
                 <Button Text="CHECK" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" Padding="50,10" BackgroundColor="#0E7E93"/>
             </StackLayout>
         </ContentView>

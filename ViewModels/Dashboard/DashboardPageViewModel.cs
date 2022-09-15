@@ -11,18 +11,7 @@ namespace SkoleIT.ViewModels.Dashboard
     {
         public DashboardPageViewModel()
         {
-            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl(); 
-        }
-
-        public class Elev
-        {
-            public string FirstName { get; }
-            public string SirName { get; }
-            public string Picture_path { get; }
-            public string Birthdate { get; }
-            public string Workplace { get; }
-            public string Education_end { get; }
-            public string Username { get; }
+            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
         }
     }
 }

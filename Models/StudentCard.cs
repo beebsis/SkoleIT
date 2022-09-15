@@ -8,19 +8,19 @@ namespace SkoleIT.Models
 {
     public class StudentCard
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string studentImage { get; set; }
-        public string userName { get; set; }
-        public string birthDate { get; set; }
-        public string school { get; set; }
-        public string endDate { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string StudentImage { get; set; }
+        public string UserName { get; set; }
+        public string BirthDate { get; set; }
+        public string School { get; set; }
+        public string EndDate { get; set; }
+
+        public string Username { get; }
 
         public string FullName
         {
-            get { return $"{firstName} {lastName}"; }
+            get { return $"{FirstName} {LastName}"; }
         }
-
-
     }
 }
