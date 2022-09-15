@@ -16,6 +16,11 @@ namespace SkoleIT.Models
         public string school { get; set; }
         public string endDate { get; set; }
 
+        public string FullName
+        {
+            get { return $"{firstName} {lastName}"; }
+        }
+
 
     }
 }
