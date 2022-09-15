@@ -1,47 +1,261 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="SkoleIT.Views.Dashboard.StudentProfilePage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SkoleIT.Views.Dashboard.StudentProfilePage"
-             Title="StudentProfilePage"
-             BackgroundColor="#dedede">
-    <StackLayout>
-        <ContentView>
+             xmlns:local="clr-namespace:SkoleIT.Views.Dashboard">
+    <ContentPage.Content>
+        <ScrollView >
             <StackLayout>
-                <Frame
-                    BorderColor="Black"
-                    CornerRadius="50"
+                <!--Header-->
+                <ContentView>
+                    <StackLayout Margin="0,20,0,30" HorizontalOptions="Center">
+                        <Frame
+                    BorderColor="White"
+                    CornerRadius="100"
                     IsClippedToBounds="True">
-                    <Image Source="case_sde_logo.svg" HeightRequest="150" WidthRequest="150" />
-                </Frame>
-                <Label Text="Alexander W.P"/>
-                <Label Text="Syddansk Erhvervskole"/>
+                            <Image Source="case_sde_logo.svg" HeightRequest="118" WidthRequest="118"/>
+                        </Frame>
+                        <Label Text="Alexander W.P" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Text="Syddansk Erhvervskole" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- UNI LOGIN -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- NAME -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- INSTITUTION -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- BIRTHDATE -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- PHONE -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- ALTERNATIVE PHONE -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- PRIVATE EMAIL -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- ALTERNATIVE EMAIL -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
+                <!-- ADDRESS -->
+                <ContentView Padding="0,0,0,20">
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                        <ContentView>
+                            <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                    <Frame BorderColor="White" HeightRequest="32">
+                                        <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+                
+                <!-- Absence area -->
+                <ContentView>
+                    
+                </ContentView>
+                    
+                <!-- Education Info -->
+                <ContentView>
+                    <StackLayout>
+
+                        <!-- EDUCATION LENGTH -->
+                        <ContentView Padding="0,0,0,20">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                                <ContentView>
+                                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                            <Frame BorderColor="White" HeightRequest="32">
+                                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ContentView>
+                                </ContentView>
+                            </StackLayout>
+                        </ContentView>
+
+                        <!-- CONTACT TEACHER -->
+                        <ContentView Padding="0,0,0,20">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                                <ContentView>
+                                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                            <Frame BorderColor="White" HeightRequest="32">
+                                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ContentView>
+                                </ContentView>
+                            </StackLayout>
+                        </ContentView>
+
+                        <!-- CLASS -->
+                        <ContentView Padding="0,0,0,20">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                                <ContentView>
+                                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                            <Frame BorderColor="White" HeightRequest="32">
+                                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ContentView>
+                                </ContentView>
+                            </StackLayout>
+                        </ContentView>
+
+                        <!-- CLASS START -->
+                        <ContentView Padding="0,0,0,20">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                                <ContentView>
+                                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                            <Frame BorderColor="White" HeightRequest="32">
+                                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ContentView>
+                                </ContentView>
+                            </StackLayout>
+                        </ContentView>
+
+                        <!-- CLASS END -->
+                        <ContentView Padding="0,0,0,20">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="UNI-LOGIN" TextColor="#535353"/>
+                                <ContentView>
+                                    <ContentView BackgroundColor="#00788A" Padding="3,0,0,3" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="36">
+                                        <VerticalStackLayout BackgroundColor="White" Padding="0,0,0,0" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="33">
+                                            <Frame BorderColor="White" HeightRequest="32">
+                                                <Label Text="Alex5562" HeightRequest="21" TextColor="#535353" FontSize="15"/>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ContentView>
+                                </ContentView>
+                            </StackLayout>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>
+
             </StackLayout>
-        </ContentView>
-        <ContentView>
-            <StackLayout>
-                <Frame BorderColor="Gray">
-                    <Label Text="UNI-LOGIN"/>
-                </Frame>
-                <Frame>
-                    <Label Text="NAME:"/>
-                </Frame>
-                <Frame>
-                    <Label Text="INSTITUTION:"/>
-                </Frame>
-                <Frame>
-                    <Label Text="Birthdate:"/>
-                </Frame>
-            </StackLayout>
-        </ContentView>
-        <ContentView>
-            <StackLayout>
-                <Image Source="case_sde_logo.svg" HeightRequest="150" WidthRequest="150" />
-                <Label Text="Validated by"/>
-                <Label Text="Syddansk Erhvervskole"/>
-                <Label Text="01/01/2017"/>
-                <Button Text="CHECK"/>
-            </StackLayout>
-        </ContentView>
-            
-    </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

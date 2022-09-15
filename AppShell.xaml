@@ -27,5 +27,4 @@
             <Button Text="Sign Out" Command="{Binding SignOutCommand}" />
         </StackLayout>
     </Shell.FlyoutFooter>
-
 </Shell>
