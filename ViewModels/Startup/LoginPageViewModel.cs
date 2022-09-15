@@ -45,22 +45,23 @@ namespace SkoleIT.ViewModels.Startup
                 };
 
                 // Student Role, Teacher Role, Admin Role,
-                if (Email.ToLower().Contains("student"))
+                if (Email.Length > 4)
                 {
                     userDetails.RoleID = (int)RoleDetails.Student;
                     userDetails.RoleText = "Student Role";
                 }
-                else if (Email.ToLower().Contains("teacher"))
+                else 
                 {
                     userDetails.RoleID = (int)RoleDetails.Teacher;
                     userDetails.RoleText = "Teacher Role";
                 }
-                else
-                {
-                    userDetails.RoleID = (int)RoleDetails.Admin;
-                    userDetails.RoleText = "Admin Role";
-                }
 
+                /*string username = Email;
+                string password = Password;
+
+                string svcCredentials = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(username + ":" + password));
+
+                request.Headers.Add("Authorization", "Basic " + svcCredentials);*/
 
                 // calling api 
 
