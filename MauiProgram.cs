@@ -1,4 +1,5 @@
-﻿using SkoleIT.ViewModels;
+﻿using SkoleIT.Services;
+using SkoleIT.ViewModels;
 using SkoleIT.ViewModels.Dashboard;
 using SkoleIT.ViewModels.Startup;
 using SkoleIT.Views.Dashboard;
@@ -18,6 +19,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+       
+
+        builder.Services.AddSingleton<ILoginService, LoginService>();
 
         //Views
         builder.Services.AddSingleton<LoginPage>();
@@ -29,6 +33,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginPageViewModel>();
         builder.Services.AddSingleton<DashboardPageViewModel>();
         builder.Services.AddSingleton<LoadingPageViewModel>();
+
+       
 
         return builder.Build();
 	}
