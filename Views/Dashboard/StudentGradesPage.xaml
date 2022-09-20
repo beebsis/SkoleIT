@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="SkoleIT.Views.Dashboard.StudentGradesPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SkoleIT.Views.Dashboard">
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView>
+                <StackLayout Margin="0,20,0,30" HorizontalOptions="Center">
+                    <Frame
+                    BorderColor="White"
+                    CornerRadius="100"
+                    IsClippedToBounds="True">
+                        <Image Source="case_sde_logo.svg" HeightRequest="118" WidthRequest="118"/>
+                    </Frame>
+                    <Label Text="{Binding Name}" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Institution}" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="GRADES" FontAttributes="Bold" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </StackLayout>
+            </ContentView>
+            
+            <!-- GRADES -->
+            <ContentView>
+                
+                <!-- Needs to loop and create these through the model-->
+                <Grid ColumnDefinitions="*" Padding="10" HeightRequest="50" BackgroundColor="LightBlue">
+                    
+                    <Label Text="Network" FontSize="20" FontAttributes="Bold" BackgroundColor="LightCoral" VerticalOptions="Center"/>
+                    
+                    <ContentView BackgroundColor="LightCyan" HorizontalOptions="End" >
+                        <FlexLayout BackgroundColor="LightGoldenrodYellow">
+                            <Label Text="H4" Padding="15,0" FontSize="20"  VerticalOptions="Center"/>
+                            <Label Text="12" Padding="15,0" FontSize="20" VerticalOptions="Center"/>
+                        </FlexLayout>
+                    </ContentView>
+                 
+                </Grid>
+
+            </ContentView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SkoleIT.Views.Dashboard.DashboardPage"
              Title="DashboardPage">
-    <StackLayout>
+    <StackLayout BackgroundColor="#00788A">
         <Label Text="{Binding Title}"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"/>
     </StackLayout>
 </ContentPage>

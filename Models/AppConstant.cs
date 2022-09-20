@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentProfilePage = SkoleIT.Views.Dashboard.StudentProfilePage;
 
 namespace SkoleIT.Models
 {
@@ -37,15 +38,9 @@ namespace SkoleIT.Models
                                 new ShellContent
                                 {
                                     Icon = Icons.Dashboard,
-                                    Title = "Student Dashboard",
+                                    Title = "Student Card",
                                     ContentTemplate = new DataTemplate(typeof(StudentDashboardPage)),
-                                },
-                                new ShellContent
-                                {
-                                    Icon = Icons.AboutUs,
-                                    Title = "Student Profile",
-                                    ContentTemplate = new DataTemplate(typeof(StudentDashboardPage)),
-                                },
+                                }
                             }
                 };
                 if (!AppShell.Current.Items.Contains(flyoutItem))

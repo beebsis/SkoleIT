@@ -4,25 +4,55 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:SkoleIT"
-    xmlns:dashboardPages="clr-namespace:SkoleIT.Views.Dashboard"
     xmlns:models="clr-namespace:SkoleIT.Models"
     Shell.TabBarIsVisible="False"
-    xmlns:startupPages="clr-namespace:SkoleIT.Views.Startup">
+    xmlns:dashboardPages="clr-namespace:SkoleIT.Views.Dashboard"
+    xmlns:startupPages="clr-namespace:SkoleIT.Views.Startup"
+    FlyoutBehavior="Flyout">
 
-   
-    <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
-        ContentTemplate="{DataTemplate startupPages:LoadingPage}" Route="LoadingPage" />
+
+    <FlyoutItem Title="Flyout 1" FlyoutDisplayOptions="AsMultipleItems">
+        <!-- Startup Pages skal være i top -->
+
+        <ShellContent
+            Title="Student Card"
+            ContentTemplate="{DataTemplate dashboardPages:StudentDashboardPage}"
+            Route="StudentDashboardPage"/>
+        
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate dashboardPages:StudentProfilePage}"
+            Route="StudentProfilePage"/>
+
+        <ShellContent
+            Title="Grades"
+            ContentTemplate="{DataTemplate dashboardPages:StudentGradesPage}"
+            Route="StudentGradesPage"/>
+        <ShellContent
+            Title="Schedule"
+            ContentTemplate="{DataTemplate dashboardPages:StudentSkemaPage}"
+            Route="StudentSkemaPage"/>
+
+
+    </FlyoutItem>
 
     <ShellContent
-        Title="Login Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
-        ContentTemplate="{DataTemplate startupPages:LoginPage}"
-        Route="LoginPage" />
-    
-    
+            FlyoutItemIsVisible="False"
+            Shell.FlyoutBehavior="Disabled"
+            ContentTemplate="{DataTemplate startupPages:LoadingPage}"
+            Route="LoadingPage" />
+
+    <ShellContent
+            FlyoutItemIsVisible="False"
+            Shell.FlyoutBehavior="Disabled"
+            ContentTemplate="{DataTemplate startupPages:LoginPage}"
+            Route="LoginPage"
+            Title="Login Page" />
+
     <Shell.FlyoutFooter>
         <StackLayout Padding="20">
             <Button Text="Sign Out" Command="{Binding SignOutCommand}" />
         </StackLayout>
     </Shell.FlyoutFooter>
-
 </Shell>
