@@ -18,7 +18,7 @@ namespace SkoleIT.Services
         }
 
         StudentCard studentCard = new();
-        public async Task<StudentCard> GetStudentCard()
+        public async Task<StudentCard> getStudentCard()
         {
             if(studentCard != null)
             {
