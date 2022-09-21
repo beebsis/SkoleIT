@@ -37,9 +37,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<DashboardPageViewModel>();
         builder.Services.AddSingleton<LoadingPageViewModel>();
 
-		builder.Services.AddSingleton<StudentSkemaPageViewModel>();
-		builder.Services.AddSingleton<StudentProfilePageViewModel>();
-		//builder.Services.AddSingleton<StudentGradesViewModel>();
+       
 
         return builder.Build();
 	}
