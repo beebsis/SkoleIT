@@ -2,103 +2,113 @@
 <ContentPage x:Class="SkoleIT.Views.Dashboard.StudentSkemaPage"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SkoleIT.Views.Dashboard">
+             xmlns:local="clr-namespace:SkoleIT.Views.Dashboard"
+             BackgroundColor="#FCFCFC">
+    
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="Fill">
             <!-- Week Days -->
             <ContentView>
-                <FlexLayout>
+                <FlexLayout
+                    AlignContent="Center"
+                    AlignItems="Center"
+                    JustifyContent="SpaceEvenly"
+                    Wrap="NoWrap"
+                    VerticalOptions="Fill"
+                    HeightRequest="100">
                     <Button Text="Mon" 
                             TextColor="#464646"
                             FontAttributes="Bold"
-                            FontSize="20"/>
+                            FontSize="20"
+                            BackgroundColor="#FCFCFC"/>
 
                     <Button Text="Tue" 
                             TextColor="#464646"
                             FontAttributes="Bold"
-                            FontSize="20"/>
+                            FontSize="20"
+                            BackgroundColor="#FCFCFC"/>
 
                     <Button Text="Wed" 
                             TextColor="#464646"
                             FontAttributes="Bold"
-                            FontSize="20"/>
-                    
+                            FontSize="20"
+                            BackgroundColor="#FCFCFC"/>
+
                     <Button Text="Thur" 
                             TextColor="#464646"
                             FontAttributes="Bold"
-                            FontSize="20"/>
-                    
+                            FontSize="20"
+                            BackgroundColor="#FCFCFC"/>
+
                     <Button Text="Fri" 
                             TextColor="#464646"
                             FontAttributes="Bold"
-                            FontSize="20"/>
+                            FontSize="20"
+                            BackgroundColor="#FCFCFC"/>
                 </FlexLayout>
             </ContentView>
-            
+
             <!-- Courses -->
-            <ContentView>
-                
-                <!-- List View -->
-                <ListView>
-                    
-                    <!-- Item Template -->
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            
-                            <!-- Flex Layout-->
-                            <FlexLayout 
+            <ScrollView>
+                <StackLayout VerticalOptions="Fill">
+                    <!-- First class -->
+                    <ContentView BackgroundColor="#FCFCFC" Padding="15,0,15,0">
+                        <!-- Flex Layout-->
+                        <FlexLayout 
                                 AlignContent="Center"
                                 AlignItems="Center"
                                 JustifyContent="Center"
-                                Wrap="NoWrap">
-                                
-                                <!-- Times -->
-                                <ContentView 
+                                Wrap="NoWrap"
+                                FlexLayout.Basis="100%">
+
+                            <!-- Times -->
+                            <ContentView 
                                     FlexLayout.AlignSelf="Start"
                                     FlexLayout.Basis="25%"
                                     FlexLayout.Shrink="25"
-                                    FlexLayout.Order="1">
-                                    
-                                    <StackLayout>
-                                        <Label Text="08:10"
+                                    FlexLayout.Order="1"
+                                    HeightRequest="75">
+
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="08:10"
+                                               TextColor="#00788A"
+                                               FontAttributes="Bold"
+                                               FontSize="17"
+                                               />
+
+                                    <Label Text="08:55"
                                                TextColor="#00788A"
                                                FontAttributes="Bold"
                                                FontSize="17"/>
-                                        
-                                        <Label Text="08:55"
-                                               TextColor="#00788A"
-                                               FontAttributes="Bold"
-                                               FontSize="17"/>
-                                    </StackLayout>
-                                </ContentView>
-                                <!--Text Content-->
-                                <ContentView 
+                                </StackLayout>
+                            </ContentView>
+                            <!--Text Content-->
+                            <ContentView 
                                     FlexLayout.AlignSelf="Stretch"
                                     FlexLayout.Basis="75%"
                                     FlexLayout.Order="2">
-                                    
-                                    <StackLayout>
-                                        <Label Text="Course Title"
+
+                                <StackLayout>
+                                    <Label Text="Course Title"
                                                TextColor="#464646"
                                                FontAttributes="Bold"
                                                FontSize="17"/>
-                                        
-                                        <Label Text="Room: MU8-Z29a"
-                                               TextColor="#464646"
-                                               FontSize="17"/>
-                                        
-                                        <Label Text="Teacher: RADA"
-                                               TextColor="#464646"
-                                               FontSize="17"/>
-                                    </StackLayout>
-                                </ContentView>
-                            </FlexLayout>
 
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </ContentView>
-            
+                                    <Label Text="Room: MU8-Z29a"
+                                               TextColor="#464646"
+                                               FontSize="17"/>
+
+                                    <Label Text="Teacher: RADA"
+                                               TextColor="#464646"
+                                               FontSize="17"/>
+                                </StackLayout>
+                            </ContentView>
+                        </FlexLayout>
+                    </ContentView>
+                    <!-- First class End-->
+                    <!-- Second class Start-->
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
